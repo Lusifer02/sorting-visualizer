@@ -1,0 +1,56 @@
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --accent: #3b82f6;
+    --bar-color: #60a5fa;
+    --bar-highlight: #2563eb;
+    --status-ready: #d1fae5;
+    --status-ready-text: #065f46;
+    --status-sorting: #bfdbfe;
+    --status-sorting-text: #1e40af;
+    --status-sorted: #a7f3d0;
+    --status-sorted-text: #047857;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.bg-opacity-50 {
+    background-color: var(--bg-secondary);
+}
+
+#visualization {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--text-secondary);
+}
+
+.algo-btn {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+}
+
+.algo-btn:hover, .algo-btn.active {
+    background-color: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+#status {
+    background-color: var(--status-ready);
+    color: var(--status-ready-text);
+}
+
+#status.sorting {
+    background-color: var(--status-sorting);
+    color: var(--status-sorting-text);
+}
+
+#status.sorted {
+    background-color: var(--status-sorted);
+    color: var(--status-sorted-text);
+}
